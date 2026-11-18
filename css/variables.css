@@ -1,0 +1,104 @@
+/* Brasil Fitness — color system
+   Cores sólidas extraídas da paleta do Figma; gradientes omitidos.
+   Escalas ordenadas visualmente do mais claro para o mais escuro.
+   Os índices representam ordem tonal, não etapas uniformes de luminosidade.
+*/
+
+:root {
+  /* Neutros (claro -> escuro) */
+  --color-neutral-050: #FFFFFF;
+  --color-neutral-100: #F5F6F4;
+  --color-neutral-150: #F5F6F2;
+  --color-neutral-200: #F4F6EF;
+  --color-neutral-250: #F5F5F4;
+  --color-neutral-300: #E6F1E9;
+  --color-neutral-350: #EEEEEE;
+  --color-neutral-400: #E9EBE8;
+  --color-neutral-450: #EAEAE7;
+  --color-neutral-500: #DFEBE2;
+  --color-neutral-550: #D5E9DF;
+  --color-neutral-600: #DCE6DF;
+  --color-neutral-650: #DDE0D9;
+  --color-neutral-700: #C0CEC4;
+  --color-neutral-750: #BDC9BE;
+  --color-neutral-800: #4E544F;
+  --color-neutral-850: #000000;
+
+  /* Verdes suaves e superfícies */
+  --color-mint-050: #C1E0CA;
+
+  /* Cinzas esverdeados */
+  --color-slate-050: #718076;
+  --color-slate-100: #4E5C53;
+  --color-slate-150: #4C5A50;
+
+  /* Verdes profundos (claro -> escuro) */
+  --color-forest-050: #1A713F;
+  --color-forest-100: #196B3D;
+  --color-forest-150: #086B37;
+  --color-forest-200: #14663B;
+  --color-forest-250: #156234;
+  --color-forest-300: #294B2D;
+  --color-forest-350: #27402B;
+  --color-forest-400: #183521;
+  --color-forest-450: #14331D;
+  --color-forest-500: #14251B;
+  --color-forest-550: #14251A;
+  --color-forest-600: #0C2416;
+  --color-forest-650: #102117;
+  --color-forest-700: #0C2115;
+  --color-forest-750: #102015;
+  --color-forest-800: #101A13;
+  --color-forest-850: #0A1B12;
+  --color-forest-900: #091B11;
+  --color-forest-950: #121814;
+  --color-forest-1000: #06190C;
+  --color-forest-1050: #081810;
+  --color-forest-1100: #0A170C;
+  --color-forest-1150: #07170E;
+  --color-forest-1200: #0A150E;
+  --color-forest-1250: #06120B;
+  --color-forest-1300: #041108;
+
+  /* Acentos lima (claro -> escuro) */
+  --color-lime-050: #B8FF3C;
+  --color-lime-100: #B8FB43;
+  --color-lime-150: #B7F447;
+  --color-lime-200: #57800C;
+
+  /* Tokens semânticos: use estes nos componentes. */
+  --color-page: #F5F6F4;
+  --color-surface: #FFFFFF;
+  --color-surface-muted: #E9EBE8;
+  --color-surface-green: #DFEBE2;
+  --color-text: #101A13;
+  --color-text-muted: #4E5C53;
+  --color-text-inverse: #FFFFFF;
+  --color-bg-dark: #06120B;
+  --color-surface-dark: #14251B;
+  --color-border: #C0CEC4;
+  --color-border-dark: #294B2D;
+  --color-brand: #156234;
+  --color-brand-hover: #086B37;
+  --color-accent: #B8FF3C;
+  --color-accent-text: #101A13;
+  
+  /* Font families */
+  --font-display: "Anybody", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+
+  /* Font weights */
+  --weight-regular: 400;
+  --weight-bold: 700;
+  --weight-black: 900;
+
+  /* Anybody */
+  --font-display-width: 66%;
+
+  /* Line heights */
+  --leading-display: 0.95;
+  --leading-heading: 1.1;
+  --leading-body: 1.6;
+}
+
+

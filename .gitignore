@@ -1,0 +1,36 @@
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Arquivos temporários
+*.log
+*.tmp
+*.bak
+*.swp
+*.zip
+
+# Variáveis e credenciais
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+
+# Dependências e builds temporários
+node_modules/
+dist/
+coverage/
+
+# Arquivos internos
+notes-private/
+
+# Arquivos Auxiliares
+docs/

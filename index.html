@@ -1,0 +1,843 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Brazil Fitness | Academia em Mogi Mirim</title>
+    <meta
+      name="description"
+      content="Na Brazil Fitness, treino, orientação e acolhimento caminham juntos. Conheça nossa academia em Mogi Mirim, SP."
+    />
+    <meta name="theme-color" content="#0A170C" />
+    <meta name="color-scheme" content="light" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Definir og:image, canonical e favicon quando os arquivos e o domínio final estiverem confirmados. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta
+      property="og:title"
+      content="Brazil Fitness | Academia em Mogi Mirim"
+    />
+    <meta
+      property="og:description"
+      content="Mais do que treinar: encontrar um lugar onde você se sente bem."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="Brazil Fitness | Academia em Mogi Mirim"
+    />
+    <meta
+      name="twitter:description"
+      content="Mais do que treinar: encontrar um lugar onde você se sente bem."
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ExerciseGym",
+        "name": "Brazil Fitness",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Mogi Mirim",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        }
+      }
+    </script>
+
+    <link
+      rel="preload"
+      href="./assets/fonts/anybody-italic.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <!-- CSS: manter esta ordem para permitir sobrescritas controladas -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+
+    <!-- Bibliotecas CDN: scripts defer executam na ordem declarada -->
+    <script
+      defer
+      src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"
+    ></script>
+    <script defer src="./js/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header" id="inicio">
+      <div class="container site-header__inner">
+        <a class="wordmark" href="#inicio" aria-label="Brazil Fitness, início"
+          >Brazil <span>Fitness</span></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-controls="navegacao"
+          aria-expanded="false"
+          hidden
+        >
+          Menu <i data-lucide="menu" aria-hidden="true"></i>
+        </button>
+        <nav class="site-nav" id="navegacao" aria-label="Navegação principal">
+          <ul class="site-nav__links">
+            <li><a href="#historia">História</a></li>
+            <li><a href="#experiencia">Experiência</a></li>
+            <li><a href="#planos">Planos</a></li>
+            <li><a href="#duvidas">Dúvidas</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+          <a class="button button--accent" href="#contato"
+            >Quero conhecer de perto
+            <i data-lucide="arrow-up-right" aria-hidden="true">↗</i></a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo" tabindex="-1">
+      <section class="hero container" aria-labelledby="titulo">
+        <div class="hero__intro">
+          <h1 class="heading hero__title" id="titulo" data-animate="hero">
+            <span>Mais do que</span>
+            <span>treinar. É</span>
+            <span>encontrar um</span>
+            <span>lugar <mark>onde você</mark></span>
+            <span><mark>se sente bem.</mark></span>
+          </h1>
+          <div class="hero__aside">
+            <p data-animate="hero">
+              Quando você se sente à vontade, tem orientação e encontra pessoas
+              com quem gosta de estar, treinar deixa de ser apenas um
+              compromisso e começa a fazer parte da sua vida.
+            </p>
+            <a
+              class="button button--brand"
+              href="#experiencia"
+              data-animate="hero"
+              >Descubra o seu lugar
+              <i data-lucide="arrow-up-right" aria-hidden="true">↗</i></a
+            >
+          </div>
+        </div>
+        <picture class="hero__photo" data-animate="hero">
+          <source
+            type="image/webp"
+            srcset="
+              ./assets/images/hero-768.webp   768w,
+              ./assets/images/hero-1640.webp 1640w
+            "
+            sizes="(min-width: 120rem) 80rem, (min-width: 96rem) 66.67vw, (min-width: 70rem) 64rem, (min-width: 48rem) calc(100vw - 6rem), calc(100vw - 2.5rem)"
+          />
+          <img
+            src="./assets/images/hero.jpg"
+            width="1640"
+            height="1093"
+            fetchpriority="high"
+            alt="Homem levantando uma barra com anilhas durante o treino de força."
+          />
+        </picture>
+        <a class="hero__scroll" href="#dificuldade">Role para descobrir</a>
+      </section>
+
+      <section
+        class="difficulty story-grid container"
+        id="dificuldade"
+        tabindex="-1"
+      >
+        <img
+          class="difficulty__photo"
+          data-animate="fade-in"
+          src="./assets/images/dificuldade.webp"
+          width="768"
+          height="1376"
+          loading="lazy"
+          decoding="async"
+          alt="Mulher sentada em um banco de academia, segurando uma garrafa de água."
+        />
+        <div class="difficulty__copy" data-animate="fade-up">
+          <h2 class="heading editorial-title">
+            <span class="line">Nem sempre</span>
+            <span class="line">o difícil é</span>
+            <span class="line"><mark>começar.</mark></span>
+          </h2>
+          <p>
+            Você sabe da importância de se exercitar.<br /><strong
+              >Talvez até já tenha tentado algumas vezes.</strong
+            >
+          </p>
+          <p class="note">
+            Mas encontrar um lugar onde você se sinta acolhido, tenha o apoio
+            necessário e consiga construir uma rotina nem sempre é tão simples.
+          </p>
+        </div>
+      </section>
+
+      <section class="motivation dark">
+        <div class="container" data-animate="fade-up">
+          <h2 class="heading editorial-title">
+            <span class="line">E quando falta aquela</span>
+            <span class="line">vontade de estar ali, até o</span>
+            <span class="line">que faz bem <em>começa a pesar.</em></span>
+          </h2>
+          <p>
+            O treino se torna mais uma tarefa na agenda. Aos poucos, a motivação
+            diminui, a rotina perde espaço e cuidar de si acaba ficando para
+            depois.
+          </p>
+          <a class="button action action--lime heading" href="#pertencimento"
+            >Mas não precisa ser assim.</a
+          >
+        </div>
+      </section>
+
+      <section class="belonging container" id="pertencimento" tabindex="-1">
+        <header data-animate="fade-up">
+          <h2 class="heading editorial-title">
+            <span class="line">A necessidade faz</span>
+            <span class="line">começar. O <mark>pertencimento</mark></span>
+            <span class="line">faz querer continuar.</span>
+          </h2>
+        </header>
+        <div class="belonging__body">
+          <div class="collage" data-animate="fade-in">
+            <img
+              src="./assets/images/pertencimento-01.webp"
+              width="1060"
+              height="592"
+              loading="lazy"
+              decoding="async"
+              alt="Quatro pessoas conversando depois do treino."
+            />
+            <img
+              src="./assets/images/acompanhamento-01.webp"
+              width="1200"
+              height="675"
+              loading="lazy"
+              decoding="async"
+              alt="Duas pessoas sentadas conversam com uma prancheta."
+            />
+          </div>
+          <div class="prose" data-animate="fade-up">
+            <p>
+              Há mais de 20 anos, nossa academia é um espaço onde o exercício
+              também significa encontro, convivência e troca.
+            </p>
+            <p>
+              Um lugar feito de pessoas que se conhecem, compartilham
+              experiências e tornam o treino um momento agradável do dia.
+            </p>
+            <p class="conclusion">
+              <strong
+                >Porque cuidar da saúde é importante. Sentir-se bem durante essa
+                jornada também.</strong
+              >
+            </p>
+            <a class="button action action--green" href="#contato"
+              >Venha fazer parte
+              <i data-lucide="arrow-up-right" aria-hidden="true">↗</i></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="history story-grid container" id="historia" tabindex="-1">
+        <div class="history__media" data-animate="fade-in">
+          <img
+            src="./assets/images/pertencimento-02.webp"
+            width="1376"
+            height="768"
+            loading="lazy"
+            decoding="async"
+            alt="Pessoas treinando entre esteiras e aparelhos de musculação."
+          />
+          <p class="year"><small>Desde</small> 2003</p>
+        </div>
+        <div class="prose" data-animate="fade-up">
+          <h2 class="heading editorial-title">
+            <span class="line">Há mais de 20</span>
+            <span class="line">anos, o que</span>
+            <span class="line">nos move são</span>
+            <span class="line"><mark>as pessoas.</mark></span>
+          </h2>
+          <p>
+            Nossa história começou em 2003, quando Weslen Maceira abriu as
+            portas da academia em Mogi Mirim. Desde então, muita coisa mudou: o
+            espaço, os desafios e as histórias que passaram por aqui.
+          </p>
+          <p>
+            O que permanece é a proximidade com quem faz parte dessa trajetória.
+            Ao longo dos anos, a academia se tornou um lugar de encontros, de
+            conversas e de
+            <strong
+              >pessoas que compartilham algo importante: o desejo de cuidar de
+              si.</strong
+            >
+          </p>
+          <p class="note">
+            Hoje, seguimos construindo essa história a cada treino, com o mesmo
+            valor que nos trouxe até aqui:
+            <strong>AS PESSOAS VÊM PRIMEIRO.</strong>
+          </p>
+        </div>
+      </section>
+
+      <section class="experience dark" id="experiencia" tabindex="-1">
+        <div class="experience__inner">
+          <header class="experience__intro" data-animate="fade-up">
+            <h2 class="heading">
+              Tudo começa com uma conversa.
+              <em>E continua com gente por perto.</em>
+            </h2>
+            <p>
+              Cada pessoa chega com uma história, seus próprios objetivos e um
+              ponto de partida diferente. Por isso, procuramos conhecer sua
+              realidade e entender como o exercício pode fazer parte da sua
+              rotina.
+            </p>
+          </header>
+          <div class="steps">
+            <article class="step">
+              <figure class="step__media" data-animate="fade-in">
+                <img
+                  src="./assets/images/acompanhamento-01.webp"
+                  width="1200"
+                  height="675"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Duas pessoas sentadas conversam com uma prancheta."
+                />
+                <figcaption>Primeiro contato</figcaption>
+              </figure>
+              <div class="step__copy prose" data-animate="fade-up">
+                <span class="step__index" aria-hidden="true">01</span>
+                <h3 class="heading">
+                  Antes de montar seu treino, queremos ouvir você.
+                </h3>
+                <p>
+                  O primeiro passo é uma conversa sobre seus objetivos,
+                  dificuldades e o que levou você até a academia. Junto à
+                  avaliação física inicial, ela nos ajuda a entender suas
+                  necessidades e orientar os próximos passos.
+                </p>
+              </div>
+            </article>
+            <article class="step">
+              <figure class="step__media" data-animate="fade-in">
+                <img
+                  src="./assets/images/acompanhamento-02.webp"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Homem sorrindo durante um exercício na polia."
+                />
+                <figcaption>Treino personalizado</figcaption>
+              </figure>
+              <div class="step__copy prose" data-animate="fade-up">
+                <span class="step__index" aria-hidden="true">02</span>
+                <h3 class="heading">
+                  Um treino construído a partir das suas necessidades.
+                </h3>
+                <p>
+                  Seja para ganhar força, melhorar a mobilidade, cuidar da saúde
+                  ou começar a se movimentar, cada pessoa chega com objetivos e
+                  condições diferentes.
+                </p>
+                <p>
+                  Por isso, adaptamos os exercícios à realidade de cada aluno,
+                  respeitando suas possibilidades e o que deseja alcançar.
+                </p>
+              </div>
+            </article>
+            <article class="step">
+              <figure class="step__media" data-animate="fade-in">
+                <img
+                  src="./assets/images/acompanhamento03.webp"
+                  width="1200"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Mulher realiza uma remada com orientação de um professor."
+                />
+                <figcaption>Orientação próxima</figcaption>
+              </figure>
+              <div class="step__copy prose" data-animate="fade-up">
+                <span class="step__index" aria-hidden="true">03</span>
+                <h3 class="heading">
+                  Sempre que precisar, tem alguém para ajudar.
+                </h3>
+                <p>
+                  Durante os treinos, nossos professores estão por perto para
+                  observar a execução dos exercícios, corrigir movimentos quando
+                  necessário e esclarecer dúvidas.
+                </p>
+                <p>
+                  E, entre uma orientação e outra, a conversa acontece
+                  naturalmente. Afinal, conhecer nossos alunos também faz parte
+                  do dia a dia.
+                </p>
+              </div>
+            </article>
+            <article class="step">
+              <figure class="step__media" data-animate="fade-in">
+                <img
+                  src="./assets/images/acompanhamento-04.webp"
+                  width="1100"
+                  height="733"
+                  loading="lazy"
+                  decoding="async"
+                  alt="Mulher fazendo abdominal em um colchonete."
+                />
+                <figcaption>Evolução contínua</figcaption>
+              </figure>
+              <div class="step__copy prose" data-animate="fade-up">
+                <span class="step__index" aria-hidden="true">04</span>
+                <h3 class="heading">Sua evolução também merece atenção.</h3>
+                <p>
+                  As avaliações físicas mensais ajudam a acompanhar sua evolução
+                  e perceber mudanças ao longo do tempo.
+                </p>
+                <p>
+                  E nem todo avanço aparece da mesma forma. Pode ser mais força,
+                  mais disposição ou maior facilidade para realizar atividades
+                  do cotidiano. Cada pessoa evolui no seu ritmo.
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="experience__closing" data-animate="fade-up">
+            <div>
+              <p class="eyebrow">MAIS DO QUE UMA ACADEMIA</p>
+              <h3 class="heading">
+                Tudo isso em um ambiente onde as pessoas se conhecem, conversam
+                e compartilham experiências.
+              </h3>
+              <p class="closing-highlight">
+                Porque o treino também pode ser um bom momento do dia.
+              </p>
+            </div>
+            <aside class="hours" aria-labelledby="horarios-titulo">
+              <h3 id="horarios-titulo">HORÁRIOS DE FUNCIONAMENTO</h3>
+              <p class="hours__status">Horários provisórios</p>
+              <dl>
+                <dt>Segunda a sexta</dt>
+                <dd>06h–20h</dd>
+                <dt>Sábado</dt>
+                <dd>Até 12h</dd>
+              </dl>
+              <p class="hours__notice">Em breve, novos horários</p>
+            </aside>
+          </div>
+          <div class="experience__cta">
+            <p>Um ambiente para fazer parte.</p>
+            <a class="button action action--lime" href="#contato"
+              >Venha fazer parte
+              <i data-lucide="arrow-up-right" aria-hidden="true">↗</i></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="plans container" id="planos" tabindex="-1">
+        <header data-animate="fade-up">
+          <h2 class="heading editorial-title">
+            <span class="line">Seu próximo passo,</span>
+            <span class="line"><mark>do seu jeito.</mark></span>
+          </h2>
+          <p>
+            Cada pessoa tem seu ritmo. Escolha o período que faz mais sentido
+            para você e comece a construir sua rotina de exercícios com
+            orientação e acompanhamento.
+          </p>
+        </header>
+        <div class="plan-list" data-animate="stagger">
+          <article class="plan">
+            <header>
+              <span class="plan__index" aria-hidden="true">01</span>
+              <h3>Essencial</h3>
+              <p>Plano mensal</p>
+            </header>
+            <div class="plan__price">
+              <strong>R$ 105/mês</strong>
+            </div>
+            <p>Para quem prefere a flexibilidade de um compromisso mensal.</p>
+            <a class="button action action--outline" href="#contato"
+              >Começar com o Essencial
+              <i data-lucide="arrow-up-right" aria-hidden="true">↗</i></a
+            >
+          </article>
+          <article class="plan plan--featured">
+            <header>
+              <span class="plan__index" aria-hidden="true">02</span>
+              <h3>Constância</h3>
+              <p>Plano trimestral</p>
+            </header>
+            <div class="plan__price">
+              <strong>3 × R$ 95</strong>
+              <small>— total de R$ 285</small>
+            </div>
+            <p>
+              Para quem quer reservar um tempo para começar a criar seu ritmo.
+            </p>
+            <a class="button action action--lime" href="#contato"
+              >Manter a constância
+              <i data-lucide="arrow-up-right" aria-hidden="true">↗</i></a
+            >
+          </article>
+          <article class="plan">
+            <header>
+              <span class="plan__index" aria-hidden="true">03</span>
+              <h3>Compromisso</h3>
+              <p>Plano semestral</p>
+            </header>
+            <div class="plan__price">
+              <strong>6 × R$ 90</strong>
+              <small>— total de R$ 540</small>
+            </div>
+            <p>
+              Para quem deseja planejar sua rotina de exercícios por mais tempo.
+            </p>
+            <a class="button action action--outline" href="#contato"
+              >Assumir o compromisso
+              <i data-lucide="arrow-up-right" aria-hidden="true">↗</i></a
+            >
+          </article>
+        </div>
+        <small class="plan-terms"
+          >Valores e condições sujeitos a confirmação.</small
+        >
+        <div class="plans__help">
+          <p>
+            <i data-lucide="info" aria-hidden="true"></i> Tem dúvidas sobre as
+            condições ou sobre qual plano combina com você? Nossa equipe pode
+            ajudar.
+          </p>
+          <a class="button action action--green" href="#contato"
+            >Tirar dúvidas sobre os planos
+            <i data-lucide="arrow-up-right" aria-hidden="true">↗</i></a
+          >
+        </div>
+      </section>
+
+      <section class="community" id="comunidade">
+        <div class="community__intro container" data-animate="fade-up">
+          <div>
+            <p class="eyebrow">08 — QUEM FAZ PARTE</p>
+            <h2 class="heading">
+              Ninguém conta melhor essa história do que
+              <em>quem está aqui todos os dias.</em>
+            </h2>
+          </div>
+          <div class="prose">
+            <p>
+              Há mais de 20 anos, pessoas diferentes passam pela nossa academia,
+              cada uma com seus objetivos e sua maneira de viver o exercício.
+            </p>
+            <p>
+              Agora, queremos que você conheça um pouco dessa experiência pelas
+              palavras de quem faz parte dela.
+            </p>
+          </div>
+        </div>
+        <div class="community__voices dark">
+          <div class="container">
+            <header>
+              <h3 class="heading">Histórias de quem vive a Brasil Fitness</h3>
+              <span class="eyebrow">VOZES DA NOSSA COMUNIDADE</span>
+            </header>
+            <div class="voices" data-animate="stagger">
+              <div class="voice">
+                <span aria-hidden="true">“</span>
+                <p>[Inserir relato real de aluno, com autorização.]</p>
+                <small class="eyebrow">Depoimento 01</small>
+              </div>
+              <div class="voice">
+                <span aria-hidden="true">“</span>
+                <p>[Inserir relato real de aluno, com autorização.]</p>
+                <small class="eyebrow">Depoimento 02</small>
+              </div>
+              <div class="voice">
+                <span aria-hidden="true">“</span>
+                <p>[Inserir relato real de aluno, com autorização.]</p>
+                <small class="eyebrow">Depoimento 03</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="community__end container heading" href="#contato"
+          >A nossa história também é feita por quem treina aqui.
+          <i data-lucide="arrow-up-right" aria-hidden="true">↗</i></a
+        >
+      </section>
+
+      <section class="faq container" id="duvidas" tabindex="-1">
+        <header class="faq__intro" data-animate="fade-up">
+          <h2 class="heading editorial-title">
+            <span class="line"><mark>Ficou alguma</mark></span>
+            <span class="line"><mark>dúvida?</mark></span>
+            <span class="line">A gente ajuda</span>
+            <span class="line">você a dar</span>
+            <span class="line">o próximo</span>
+            <span class="line">passo.</span>
+          </h2>
+          <p>
+            Começar em um lugar novo pode trazer perguntas. Reunimos algumas
+            respostas para você conhecer melhor como funciona a academia.
+          </p>
+          <p class="eyebrow">Ainda tem dúvidas?</p>
+          <a class="button action action--green" href="#contato"
+            >Converse com a nossa equipe.
+            <i data-lucide="arrow-up-right" aria-hidden="true">↗</i></a
+          >
+        </header>
+        <div class="faq__list">
+          <details name="perguntas">
+            <summary>
+              <span class="faq__index" aria-hidden="true">01</span>Nunca fiz
+              academia. Posso começar mesmo assim?<span
+                class="faq__icon"
+                aria-hidden="true"
+              ></span>
+            </summary>
+            <p>
+              Sim. A proposta é respeitar o ponto de partida de cada aluno. A
+              avaliação física inicial ajuda a conhecer suas necessidades, e os
+              professores estão disponíveis para orientar você durante os
+              treinos.
+            </p>
+          </details>
+          <details name="perguntas">
+            <summary>
+              <span class="faq__index" aria-hidden="true">02</span>Os treinos
+              são iguais para todo mundo?<span
+                class="faq__icon"
+                aria-hidden="true"
+              ></span>
+            </summary>
+            <p>[Resposta a definir com a equipe da academia.]</p>
+          </details>
+          <details name="perguntas">
+            <summary>
+              <span class="faq__index" aria-hidden="true">03</span>Vou receber
+              orientação durante os treinos?<span
+                class="faq__icon"
+                aria-hidden="true"
+              ></span>
+            </summary>
+            <p>[Resposta a definir com a equipe da academia.]</p>
+          </details>
+          <details name="perguntas">
+            <summary>
+              <span class="faq__index" aria-hidden="true">04</span>Como vocês
+              acompanham minha evolução?<span
+                class="faq__icon"
+                aria-hidden="true"
+              ></span>
+            </summary>
+            <p>[Resposta a definir com a equipe da academia.]</p>
+          </details>
+          <details name="perguntas">
+            <summary>
+              <span class="faq__index" aria-hidden="true">05</span>Posso
+              conhecer a academia antes de me matricular?<span
+                class="faq__icon"
+                aria-hidden="true"
+              ></span>
+            </summary>
+            <p>[Resposta a definir com a equipe da academia.]</p>
+          </details>
+          <details name="perguntas">
+            <summary>
+              <span class="faq__index" aria-hidden="true">06</span>Qual é o
+              horário de funcionamento?<span
+                class="faq__icon"
+                aria-hidden="true"
+              ></span>
+            </summary>
+            <p>[Resposta a definir com a equipe da academia.]</p>
+          </details>
+          <details name="perguntas">
+            <summary>
+              <span class="faq__index" aria-hidden="true">07</span>Quais são os
+              planos disponíveis?<span
+                class="faq__icon"
+                aria-hidden="true"
+              ></span>
+            </summary>
+            <p>[Resposta a definir com a equipe da academia.]</p>
+          </details>
+          <details name="perguntas">
+            <summary>
+              <span class="faq__index" aria-hidden="true">08</span>Quanto tempo
+              leva para perceber resultados?<span
+                class="faq__icon"
+                aria-hidden="true"
+              ></span>
+            </summary>
+            <p>[Resposta a definir com a equipe da academia.]</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="visit container" id="contato" tabindex="-1">
+        <div class="prose" data-animate="fade-up">
+          <p class="eyebrow">AQUI COMEÇA SUA VISITA</p>
+          <h2 class="heading editorial-title">
+            <span class="line">Tem coisas</span>
+            <span class="line">que você só</span>
+            <span class="line">descobre</span>
+            <span class="line"><mark>quando</mark></span>
+            <span class="line"><mark>chega perto.</mark></span>
+          </h2>
+          <p>
+            O ambiente, as conversas, as pessoas que se encontram todos os dias.
+            São detalhes que fazem parte da nossa academia, mas que nenhuma
+            página consegue mostrar por completo.
+          </p>
+          <p>
+            Converse com a equipe, tire suas dúvidas e veja como é estar aqui.
+            Sem precisar decidir tudo de uma vez.
+          </p>
+        </div>
+        <div class="visit__card">
+          <div class="map" id="mapa">
+            <a
+              class="map__preview"
+              href="https://www.google.com/maps/search/?api=1&amp;query=Mogi+Mirim%2C+SP"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abrir mapa de Mogi Mirim, SP"
+            >
+              <img
+                src="./assets/images/map-mockup.png"
+                width="640"
+                height="640"
+                alt=""
+                loading="lazy"
+              />
+              <span
+                ><i data-lucide="map" aria-hidden="true"></i> Abrir mapa
+                interativo</span
+              >
+            </a>
+            <iframe
+              hidden
+              title="Google Maps — região de Mogi Mirim, SP"
+              data-src="https://maps.google.com/maps?q=Mogi+Mirim%2C+SP&amp;z=12&amp;output=embed"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="map__location">
+            <span>Mogi Mirim, SP · Endereço a confirmar</span>
+            <a
+              href="https://www.google.com/maps/search/?api=1&amp;query=Mogi+Mirim%2C+SP"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Como chegar — abrir Mogi Mirim no Google Maps"
+              >Como chegar
+              <i data-lucide="arrow-up-right" aria-hidden="true">↗</i></a
+            >
+          </div>
+          <div class="visit__invite">
+            <h3 class="heading">
+              Por isso, nosso convite é simples: <em>venha conhecer.</em>
+            </h3>
+            <div class="visit__actions">
+              <a class="button action action--outline" href="#atendimento"
+                >Perguntar sobre a aula experimental
+                <i data-lucide="arrow-up-right" aria-hidden="true">↗</i></a
+              >
+              <a class="button action action--lime" href="#atendimento"
+                >Quero conhecer de perto
+                <i data-lucide="arrow-up-right" aria-hidden="true">↗</i></a
+              >
+            </div>
+            <p>A gente espera você por aqui.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-banner">
+        <div class="container">
+          <h2 class="heading">A gente se vê por aqui.</h2>
+          <a
+            class="button action action--dark"
+            href="https://www.google.com/maps/search/?api=1&amp;query=Mogi+Mirim%2C+SP"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Ver como chegar — abrir Mogi Mirim no Google Maps"
+            >Ver como chegar
+            <i data-lucide="arrow-up-right" aria-hidden="true">↗</i></a
+          >
+        </div>
+      </div>
+      <div class="footer-body container">
+        <div class="footer-brand">
+          <a class="wordmark" href="#inicio" aria-label="Brazil Fitness, início"
+            >Brazil <span>Fitness</span></a
+          >
+          <p>
+            Estamos em Mogi Mirim. Entre em contato para tirar dúvidas ou saber
+            mais sobre sua primeira visita.
+          </p>
+          <a href="#mapa">A gente se vê por aqui.</a>
+        </div>
+        <div class="footer-data">
+          <div>
+            <h3>Endereço</h3>
+            <p>
+              <small>Endereço fictício · a confirmar</small>Rua Exemplo, 123 —
+              Centro<br />Mogi Mirim, SP · CEP 13800-000
+            </p>
+          </div>
+          <div>
+            <h3>Horários</h3>
+            <p>
+              <small>Horários provisórios</small>Segunda a sexta: 6h às 20h<br />Sábado:
+              8h às 12h<br />Domingo: fechado
+            </p>
+          </div>
+          <div id="atendimento" tabindex="-1">
+            <h3>WhatsApp</h3>
+            <p>
+              <small
+                >Contato fictício · canal e aula experimental a confirmar</small
+              >(19) 90000-0000<br />Atendimento por mensagem
+            </p>
+          </div>
+          <div>
+            <h3>Redes sociais</h3>
+            <p>
+              <small>Perfis fictícios · a confirmar</small>Instagram:
+              @brazilfitness.exemplo<br />Facebook: Brazil Fitness (exemplo)
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-base">
+        <div class="container">
+          <span>Brazil Fitness · Mogi Mirim, SP</span><span>Desde 2003</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
